@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "6786a532-2ea0-41b8-bdde-bb1db6dcaa81",
+		"name": "Covider",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5193164"
+	},
+	"item": [
+		{
+			"name": "getprofile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"allenxu@usc.edu\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"allenxu@usc.edu\",\r\n    \"firstName\":\"Allen\",\r\n    \"lastName\":\"Xu\",\r\n    \"type\":\"student\",\r\n    \"password\":\"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbuildings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getbuildings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getbuildings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setschedule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": \"\",\r\n        \"email\": \"allenxu@usc.edu\",\r\n        \"course\": \"CSCI 310\",\r\n        \"building\": \"Salvatori Computer Science Center\",\r\n        \"teacher\": \"Chao Wang\"\r\n    },\r\n    {\r\n        \"id\": \"\",\r\n        \"email\": \"allenxu@usc.edu\",\r\n        \"course\": \"CTCS 190\",\r\n        \"building\": \"School of Cinematic Arts\",\r\n        \"teacher\": \"George Carstocea\"\r\n    },\r\n    {\r\n        \"id\": \"\",\r\n        \"email\": \"allenxu@usc.edu\",\r\n        \"course\": \"CSCI 350\",\r\n        \"building\": \"Eileen Norris Cinema Theatre\",\r\n        \"teacher\": \"Tanya Ryutov\"\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/setschedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"setschedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getschedule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"karl\",\r\n    \"firstName\": \"Allen\",\r\n    \"lastName\": \"Xu\",\r\n    \"type\": \"student\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getschedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getschedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"\",\r\n    \"email\":\"karljian@usc.edu\",\r\n    \"building\":\"Bovard Auditorium\",\r\n    \"social_distance\": true,\r\n    \"wearing_masks\": false,\r\n    \"hand_sanitizer\": false,\r\n    \"ppe_provided\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/checkin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"checkin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "frequentlyvisited",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"allenxu@usc.edu\",\r\n    \"firstName\": \"Allen\",\r\n    \"lastName\": \"Xu\",\r\n    \"type\": \"student\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/frequentlyvisited",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"frequentlyvisited"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "healthreport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"allenxu@usc.edu\",\r\n    \"infected\": \"yes\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/healthreport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"healthreport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"allenxu@usc.edu\",\r\n    \"firstName\": \"Allen\",\r\n    \"lastName\": \"Xu\",\r\n    \"type\": \"student\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkhealthreport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"allenxu@usc.edu\",\r\n    \"firstName\": \"Allen\",\r\n    \"lastName\": \"Xu\",\r\n    \"type\": \"student\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/checkhealthreport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"checkhealthreport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getstudents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"instructor\": \"Tanya Ryutov\",\r\n    \"course\": \"CSCI 350\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/getstudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getstudents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
